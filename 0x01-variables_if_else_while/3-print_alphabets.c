@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>
 #include <ctype.h>
 /**
 *main - Program to print alphabet letters in all cases followed by new line
