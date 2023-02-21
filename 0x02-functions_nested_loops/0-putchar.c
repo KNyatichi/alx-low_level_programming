@@ -1,13 +1,18 @@
 #include "main.h"
-#include <unistd.h>
 /**
- * _putchar - writes the character c to stdout
- * @c: The charcter to print
- * Return: On Success 1
- * Return: On Error -1
+ * main - prints _putchar, fllowd by a new linees
+ * Return: Alwys 0 (Success)
  */
-
-int _putchar(char c)
+int main(void)
 {
-	return(write(1, &c, 1));
+	char abe[] = "_putchar";
+
+	int c;
+
+	for (c = 0; c < 8; c++)
+	{
+		_putchar(abe[c]);
+	}
+	_putchar('\n');
+	return (0);
 }
