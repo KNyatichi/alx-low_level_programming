@@ -8,17 +8,22 @@
  */
 int pop_listint(listint_t **head)
 {
-	listint_t *temp;
-	int num;
+	int hnode;
+	listint_t *h;
+	listint_t *curr;
 
-	if (!head || !*head)
-	return (0);
+	if (*head == NULL)
+		return (0);
 
-	num = (*head)->n;
-	temp = (*head)->next;
-	free(*head);
-	*head = temp;
+	curr = *head;
 
-	return (num);
+	hnode = curr->n;
+
+	h = curr->next;
+
+	free(curr);
+
+	*head = h;
+
+	return (hnode);
 }
-
