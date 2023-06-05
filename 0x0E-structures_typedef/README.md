@@ -1,1 +1,0 @@
-README.md File for 0x0E. C - Structures, typedef
